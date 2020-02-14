@@ -1,6 +1,5 @@
 import React, {Fragment, useState} from 'react';
 import Error from './Error';
-import { act } from 'react-dom/test-utils';
 
 
 const Pregunta = ({guardarPresupuesto, guardarRestante, actualizarPregunta}) => {
