@@ -19,7 +19,9 @@ function App() {
         ...gastos,
         gasto
       ]);
-      guardarRestante(restante - gasto.cantidad)
+      const presupuestoRestante = restante - gasto.cantidad;
+      guardarRestante(presupuestoRestante);
+      guardarCrearGasto(false);
     }
   }, [gasto, creargasto, gastos, restante])
 
